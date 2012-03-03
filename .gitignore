@@ -1,0 +1,20 @@
+# xcode noise
+build/*
+DerivedData/*
+*.pbxuser
+*.mode1v3
+*.mode2v3
+xcuserdata
+SEHumanizedTimeDiffDemo.xcodeproj/xcuserdata/*
+SEHumanizedTimeDiffDemo.xcodeproj/project.xcworkspace/xcuserdata/*
+
+
+# Source Control
+.svn
+/.git
+.gitignore~
+
+# osx noise
+.DS_Store
+profile
+*.moved-aside

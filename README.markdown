@@ -12,7 +12,7 @@ Usage
 
 Just add SEHumanizedTime folder into your project and use it as below:
 
-myLabel.text = [[NSDate dateWithTimeIntervalSinceNow:-360] getHumanizedTimeDifference]; 
+myLabel.text = [[NSDate dateWithTimeIntervalSinceNow:-360] stringWithHumanizedTimeDifference]; 
 
 Screenshots
 ---------------------
@@ -22,7 +22,7 @@ Screenshots
 
 Coming Soon
 ---------------------
-- Spanish and Italian language support.
+- German, French, Spanish and Italian language support.
 
 
 License
