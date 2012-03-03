@@ -1,0 +1,261 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		75558BED1502388D0083E641 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75558BEC1502388D0083E641 /* UIKit.framework */; };
+		75558BEF1502388D0083E641 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75558BEE1502388D0083E641 /* Foundation.framework */; };
+		75558BF11502388D0083E641 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75558BF01502388D0083E641 /* CoreGraphics.framework */; };
+		75558BF71502388D0083E641 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 75558BF51502388D0083E641 /* InfoPlist.strings */; };
+		75558BF91502388D0083E641 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 75558BF81502388D0083E641 /* main.m */; };
+		75558BFD1502388D0083E641 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 75558BFC1502388D0083E641 /* AppDelegate.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		75558BE81502388D0083E641 /* SEHumanizedTimeDiffDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SEHumanizedTimeDiffDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		75558BEC1502388D0083E641 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		75558BEE1502388D0083E641 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		75558BF01502388D0083E641 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		75558BF41502388D0083E641 /* SEHumanizedTimeDiffDemo-Info.plist */ = {isa = PBXFileReference; path = "SEHumanizedTimeDiffDemo-Info.plist"; sourceTree = "<group>"; };
+		75558BF61502388D0083E641 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		75558BF81502388D0083E641 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		75558BFA1502388D0083E641 /* SEHumanizedTimeDiffDemo-Prefix.pch */ = {isa = PBXFileReference; path = "SEHumanizedTimeDiffDemo-Prefix.pch"; sourceTree = "<group>"; };
+		75558BFB1502388D0083E641 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		75558BFC1502388D0083E641 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		75558BE51502388D0083E641 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75558BED1502388D0083E641 /* UIKit.framework in Frameworks */,
+				75558BEF1502388D0083E641 /* Foundation.framework in Frameworks */,
+				75558BF11502388D0083E641 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		75558BDD1502388D0083E641 = {
+			isa = PBXGroup;
+			children = (
+				75558BF21502388D0083E641 /* SEHumanizedTimeDiffDemo */,
+				75558BEB1502388D0083E641 /* Frameworks */,
+				75558BE91502388D0083E641 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		75558BE91502388D0083E641 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				75558BE81502388D0083E641 /* SEHumanizedTimeDiffDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		75558BEB1502388D0083E641 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				75558BEC1502388D0083E641 /* UIKit.framework */,
+				75558BEE1502388D0083E641 /* Foundation.framework */,
+				75558BF01502388D0083E641 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		75558BF21502388D0083E641 /* SEHumanizedTimeDiffDemo */ = {
+			isa = PBXGroup;
+			children = (
+				75558BFB1502388D0083E641 /* AppDelegate.h */,
+				75558BFC1502388D0083E641 /* AppDelegate.m */,
+				75558BF31502388D0083E641 /* Supporting Files */,
+			);
+			path = SEHumanizedTimeDiffDemo;
+			sourceTree = "<group>";
+		};
+		75558BF31502388D0083E641 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				75558BF41502388D0083E641 /* SEHumanizedTimeDiffDemo-Info.plist */,
+				75558BF51502388D0083E641 /* InfoPlist.strings */,
+				75558BF81502388D0083E641 /* main.m */,
+				75558BFA1502388D0083E641 /* SEHumanizedTimeDiffDemo-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		75558BE71502388D0083E641 /* SEHumanizedTimeDiffDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 75558C001502388D0083E641 /* Build configuration list for PBXNativeTarget "SEHumanizedTimeDiffDemo" */;
+			buildPhases = (
+				75558BE41502388D0083E641 /* Sources */,
+				75558BE51502388D0083E641 /* Frameworks */,
+				75558BE61502388D0083E641 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SEHumanizedTimeDiffDemo;
+			productName = SEHumanizedTimeDiffDemo;
+			productReference = 75558BE81502388D0083E641 /* SEHumanizedTimeDiffDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		75558BDF1502388D0083E641 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 75558BE21502388D0083E641 /* Build configuration list for PBXProject "SEHumanizedTimeDiffDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 75558BDD1502388D0083E641;
+			productRefGroup = 75558BE91502388D0083E641 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				75558BE71502388D0083E641 /* SEHumanizedTimeDiffDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		75558BE61502388D0083E641 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75558BF71502388D0083E641 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		75558BE41502388D0083E641 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75558BF91502388D0083E641 /* main.m in Sources */,
+				75558BFD1502388D0083E641 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		75558BF51502388D0083E641 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				75558BF61502388D0083E641 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		75558BFE1502388D0083E641 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		75558BFF1502388D0083E641 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		75558C011502388D0083E641 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SEHumanizedTimeDiffDemo/SEHumanizedTimeDiffDemo-Prefix.pch";
+				INFOPLIST_FILE = "SEHumanizedTimeDiffDemo/SEHumanizedTimeDiffDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		75558C021502388D0083E641 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SEHumanizedTimeDiffDemo/SEHumanizedTimeDiffDemo-Prefix.pch";
+				INFOPLIST_FILE = "SEHumanizedTimeDiffDemo/SEHumanizedTimeDiffDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		75558BE21502388D0083E641 /* Build configuration list for PBXProject "SEHumanizedTimeDiffDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75558BFE1502388D0083E641 /* Debug */,
+				75558BFF1502388D0083E641 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		75558C001502388D0083E641 /* Build configuration list for PBXNativeTarget "SEHumanizedTimeDiffDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75558C011502388D0083E641 /* Debug */,
+				75558C021502388D0083E641 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 75558BDF1502388D0083E641 /* Project object */;
+}
