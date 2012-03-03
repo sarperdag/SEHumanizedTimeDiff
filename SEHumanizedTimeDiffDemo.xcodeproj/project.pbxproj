@@ -13,6 +13,10 @@
 		75558BF71502388D0083E641 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 75558BF51502388D0083E641 /* InfoPlist.strings */; };
 		75558BF91502388D0083E641 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 75558BF81502388D0083E641 /* main.m */; };
 		75558BFD1502388D0083E641 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 75558BFC1502388D0083E641 /* AppDelegate.m */; };
+		75558C07150238BE0083E641 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 75558C04150238BE0083E641 /* Localizable.strings */; };
+		75558C08150238BE0083E641 /* NSDate+HumanizedTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 75558C06150238BE0083E641 /* NSDate+HumanizedTime.m */; };
+		75558C0B150239030083E641 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75558C0A150239030083E641 /* ViewController.m */; };
+		75558C0D1502394D0083E641 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 75558C0C1502394D0083E641 /* ViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,12 +24,18 @@
 		75558BEC1502388D0083E641 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		75558BEE1502388D0083E641 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		75558BF01502388D0083E641 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		75558BF41502388D0083E641 /* SEHumanizedTimeDiffDemo-Info.plist */ = {isa = PBXFileReference; path = "SEHumanizedTimeDiffDemo-Info.plist"; sourceTree = "<group>"; };
+		75558BF41502388D0083E641 /* SEHumanizedTimeDiffDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SEHumanizedTimeDiffDemo-Info.plist"; sourceTree = "<group>"; };
 		75558BF61502388D0083E641 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		75558BF81502388D0083E641 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		75558BFA1502388D0083E641 /* SEHumanizedTimeDiffDemo-Prefix.pch */ = {isa = PBXFileReference; path = "SEHumanizedTimeDiffDemo-Prefix.pch"; sourceTree = "<group>"; };
-		75558BFB1502388D0083E641 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		75558BFA1502388D0083E641 /* SEHumanizedTimeDiffDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SEHumanizedTimeDiffDemo-Prefix.pch"; sourceTree = "<group>"; };
+		75558BFB1502388D0083E641 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		75558BFC1502388D0083E641 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		75558C04150238BE0083E641 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		75558C05150238BE0083E641 /* NSDate+HumanizedTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+HumanizedTime.h"; sourceTree = "<group>"; };
+		75558C06150238BE0083E641 /* NSDate+HumanizedTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+HumanizedTime.m"; sourceTree = "<group>"; };
+		75558C09150239030083E641 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		75558C0A150239030083E641 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		75558C0C1502394D0083E641 /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +55,7 @@
 		75558BDD1502388D0083E641 = {
 			isa = PBXGroup;
 			children = (
+				75558C03150238BE0083E641 /* SEHumanizedTime */,
 				75558BF21502388D0083E641 /* SEHumanizedTimeDiffDemo */,
 				75558BEB1502388D0083E641 /* Frameworks */,
 				75558BE91502388D0083E641 /* Products */,
@@ -74,6 +85,9 @@
 			children = (
 				75558BFB1502388D0083E641 /* AppDelegate.h */,
 				75558BFC1502388D0083E641 /* AppDelegate.m */,
+				75558C09150239030083E641 /* ViewController.h */,
+				75558C0A150239030083E641 /* ViewController.m */,
+				75558C0C1502394D0083E641 /* ViewController.xib */,
 				75558BF31502388D0083E641 /* Supporting Files */,
 			);
 			path = SEHumanizedTimeDiffDemo;
@@ -88,6 +102,16 @@
 				75558BFA1502388D0083E641 /* SEHumanizedTimeDiffDemo-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		75558C03150238BE0083E641 /* SEHumanizedTime */ = {
+			isa = PBXGroup;
+			children = (
+				75558C04150238BE0083E641 /* Localizable.strings */,
+				75558C05150238BE0083E641 /* NSDate+HumanizedTime.h */,
+				75558C06150238BE0083E641 /* NSDate+HumanizedTime.m */,
+			);
+			path = SEHumanizedTime;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +165,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				75558BF71502388D0083E641 /* InfoPlist.strings in Resources */,
+				75558C07150238BE0083E641 /* Localizable.strings in Resources */,
+				75558C0D1502394D0083E641 /* ViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,6 +179,8 @@
 			files = (
 				75558BF91502388D0083E641 /* main.m in Sources */,
 				75558BFD1502388D0083E641 /* AppDelegate.m in Sources */,
+				75558C08150238BE0083E641 /* NSDate+HumanizedTime.m in Sources */,
+				75558C0B150239030083E641 /* ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
