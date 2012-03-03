@@ -10,7 +10,7 @@
 
 @implementation NSDate (HumanizedTime)
 
-- (NSString *) getHumanizedTimeDifference {
+- (NSString *) stringWithHumanizedTimeDifference {
     
     NSTimeInterval timeInterval = [self timeIntervalSinceNow];
     
@@ -38,7 +38,7 @@
     else {
         if (hoursDiff == 0) {
             if (minutesDiff == 0)
-                return [NSString stringWithFormat:@"%@ %@", NSLocalizedString(@"SecondsKey", @""), positivity];
+                return [NSString stringWithFormat:@"%@ %@", NSLocalizedString(@"SecondKey", @""), positivity];
             else 
                 return [NSString stringWithFormat:@"%d %@ %@", minutesDiff, minutesDiff == 1 ? NSLocalizedString(@"MinuteKey", @""):NSLocalizedString(@"MinutesKey", @""), positivity];
         }

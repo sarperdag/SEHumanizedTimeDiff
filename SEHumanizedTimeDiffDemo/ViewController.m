@@ -25,15 +25,15 @@
 	[timeNowLabel setText:[formatter stringFromDate:now]];
 	[formatter release];
     
-    secondsLabel.text = [[NSDate dateWithTimeIntervalSinceNow:-10] getHumanizedTimeDifference];
-    aMinuteLabel.text = [[NSDate dateWithTimeIntervalSinceNow:-60] getHumanizedTimeDifference];
-    minutesLabel.text = [[NSDate dateWithTimeIntervalSinceNow:-360] getHumanizedTimeDifference];
-    anHourLabel.text = [[NSDate dateWithTimeIntervalSinceNow:-3600] getHumanizedTimeDifference];
-    hoursLabel.text = [[NSDate dateWithTimeIntervalSinceNow:-10800] getHumanizedTimeDifference];
-    aDayLabel.text = [[NSDate dateWithTimeIntervalSinceNow:-3600*24] getHumanizedTimeDifference];
-    daysLabel.text = [[NSDate dateWithTimeIntervalSinceNow:-3600*24*5] getHumanizedTimeDifference];
-    aYearLabel.text = [[NSDate dateWithTimeIntervalSinceNow:-3600*24*365] getHumanizedTimeDifference];
-    yearsLabel.text = [[NSDate dateWithTimeIntervalSinceNow:-3600*24*1000] getHumanizedTimeDifference];
+    secondsLabel.text = [[NSDate dateWithTimeIntervalSinceNow:-10] stringWithHumanizedTimeDifference];
+    aMinuteLabel.text = [[NSDate dateWithTimeIntervalSinceNow:-60] stringWithHumanizedTimeDifference];
+    minutesLabel.text = [[NSDate dateWithTimeIntervalSinceNow:-360] stringWithHumanizedTimeDifference];
+    anHourLabel.text = [[NSDate dateWithTimeIntervalSinceNow:-3600] stringWithHumanizedTimeDifference];
+    hoursLabel.text = [[NSDate dateWithTimeIntervalSinceNow:-10800] stringWithHumanizedTimeDifference];
+    aDayLabel.text = [[NSDate dateWithTimeIntervalSinceNow:-3600*24] stringWithHumanizedTimeDifference];
+    daysLabel.text = [[NSDate dateWithTimeIntervalSinceNow:-3600*24*5] stringWithHumanizedTimeDifference];
+    aYearLabel.text = [[NSDate dateWithTimeIntervalSinceNow:-3600*24*365] stringWithHumanizedTimeDifference];
+    yearsLabel.text = [[NSDate dateWithTimeIntervalSinceNow:-3600*24*1000] stringWithHumanizedTimeDifference];
 }
 
 

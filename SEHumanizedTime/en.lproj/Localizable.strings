@@ -6,7 +6,7 @@
 "HourKey" = "an hour";
 "MinuteKey" = "minute";
 "MinutesKey" = "minutes";
-"SecondKey" = "second";
+"SecondKey" = "a few seconds";
 "SecondsKey" = "seconds";
 "AgoKey" = "ago";
 "LaterKey" = "later";

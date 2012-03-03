@@ -3,7 +3,7 @@
 //  SEHumanizedTimeDiffDemo
 //
 //  Created by Sarp Erdag on 3/3/12.
-//  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
+//  Copyright (c) 2012 Sarp Erdag. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
