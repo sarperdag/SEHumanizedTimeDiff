@@ -20,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		61150AB1150F883A00ADB5F1 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
 		75558BE81502388D0083E641 /* SEHumanizedTimeDiffDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SEHumanizedTimeDiffDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75558BEC1502388D0083E641 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		75558BEE1502388D0083E641 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -152,6 +153,7 @@
 				tr,
 				es,
 				it,
+				de,
 			);
 			mainGroup = 75558BDD1502388D0083E641;
 			productRefGroup = 75558BE91502388D0083E641 /* Products */;
@@ -204,6 +206,7 @@
 			children = (
 				75558C56150257440083E641 /* en */,
 				75558C59150257440083E641 /* tr */,
+				61150AB1150F883A00ADB5F1 /* de */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
