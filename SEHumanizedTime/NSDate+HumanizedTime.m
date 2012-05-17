@@ -24,29 +24,39 @@
     
     NSString *positivity = [NSString stringWithFormat:@"%@", timeInterval < 0 ? NSLocalizedString(@"AgoKey", @""):NSLocalizedString(@"LaterKey", @"")];
     
+    
+    //Some languages don't need whitespeces between words.
+    NSArray *languagesWithNoSpace = [NSArray arrayWithObjects:@"zh-Hans",@"ja", nil];
+    NSString* spaceBetweenWords = @" ";
+    for (NSString* languageWithNoSpace in languagesWithNoSpace) {
+        if ([[[NSLocale preferredLanguages] objectAtIndex:0] isEqualToString:languageWithNoSpace]) {
+            spaceBetweenWords = @"";
+        }
+    }
+    
     if (yearsDiff > 1)
-        return [NSString stringWithFormat:@"%d %@ %@", yearsDiff, NSLocalizedString(@"YearsKey", @""), positivity];
+        return [NSString stringWithFormat:@"%d%@%@%@%@", yearsDiff, spaceBetweenWords, NSLocalizedString(@"YearsKey", @""), spaceBetweenWords, positivity];
     else if (yearsDiff == 1)
-        return [NSString stringWithFormat:@"%@ %@", NSLocalizedString(@"YearKey", @""), positivity];
+        return [NSString stringWithFormat:@"%@%@%@", NSLocalizedString(@"YearKey", @""), spaceBetweenWords, positivity];
     
     if (daysDiff > 0) {
         if (hoursDiff == 0)
-            return [NSString stringWithFormat:@"%d %@ %@", daysDiff, daysDiff == 1 ? NSLocalizedString(@"DayKey", @""):NSLocalizedString(@"DaysKey", @""), positivity];
+            return [NSString stringWithFormat:@"%d%@%@%@%@", daysDiff, spaceBetweenWords, daysDiff == 1 ? NSLocalizedString(@"DayKey", @""):NSLocalizedString(@"DaysKey", @""), spaceBetweenWords, positivity];
         else
-            return [NSString stringWithFormat:@"%d %@ %d %@ %@", daysDiff, daysDiff == 1 ? NSLocalizedString(@"DayKey", @""):NSLocalizedString(@"DaysKey", @""), hoursDiff, NSLocalizedString(@"HoursKey", @""), positivity];
+            return [NSString stringWithFormat:@"%d%@%@%@%d%@%@%@%@", daysDiff, spaceBetweenWords, daysDiff == 1 ? NSLocalizedString(@"DayKey", @""):NSLocalizedString(@"DaysKey", @""), spaceBetweenWords, hoursDiff, spaceBetweenWords, NSLocalizedString(@"HoursKey", @""), spaceBetweenWords, positivity];
     }
     else {
         if (hoursDiff == 0) {
             if (minutesDiff == 0)
-                return [NSString stringWithFormat:@"%@ %@", NSLocalizedString(@"SecondKey", @""), positivity];
+                return [NSString stringWithFormat:@"%@%@%@", NSLocalizedString(@"SecondKey", @""), spaceBetweenWords, positivity];
             else 
-                return [NSString stringWithFormat:@"%d %@ %@", minutesDiff, minutesDiff == 1 ? NSLocalizedString(@"MinuteKey", @""):NSLocalizedString(@"MinutesKey", @""), positivity];
+                return [NSString stringWithFormat:@"%d%@%@%@%@", minutesDiff, spaceBetweenWords, minutesDiff == 1 ? NSLocalizedString(@"MinuteKey", @""):NSLocalizedString(@"MinutesKey", @""), spaceBetweenWords, positivity];
         }
         else {
             if (hoursDiff == 1)
-                return [NSString stringWithFormat:@"%@ %@ %@", NSLocalizedString(@"AboutKey", @""), NSLocalizedString(@"HourKey", @""), positivity];
+                return [NSString stringWithFormat:@"%@%@%@%@%@", NSLocalizedString(@"AboutKey", @""), spaceBetweenWords, NSLocalizedString(@"HourKey", @""), spaceBetweenWords, positivity];
             else
-                return [NSString stringWithFormat:@"%d %@ %@", hoursDiff, NSLocalizedString(@"HoursKey", @""), positivity];
+                return [NSString stringWithFormat:@"%d%@%@%@%@", hoursDiff, spaceBetweenWords, NSLocalizedString(@"HoursKey", @""), spaceBetweenWords, positivity];
         }
     }
 }
