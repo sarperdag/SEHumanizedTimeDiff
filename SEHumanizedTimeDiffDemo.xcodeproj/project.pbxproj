@@ -38,6 +38,7 @@
 		75558C57150257440083E641 /* NSDate+HumanizedTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+HumanizedTime.h"; sourceTree = "<group>"; };
 		75558C58150257440083E641 /* NSDate+HumanizedTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+HumanizedTime.m"; sourceTree = "<group>"; };
 		75558C59150257440083E641 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		823AC97A15B8A96D00339DFB /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -207,6 +208,7 @@
 				75558C56150257440083E641 /* en */,
 				75558C59150257440083E641 /* tr */,
 				61150AB1150F883A00ADB5F1 /* de */,
+				823AC97A15B8A96D00339DFB /* pt */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
