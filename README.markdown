@@ -23,11 +23,17 @@ Screenshots
 ---------------------
 
 2010-09-14 | if > 1 year
+
 2Apr | if > 1 months but in the same year
+
 3w
+
 2d
+
 4h
+
 9m
+
 now
 
 
