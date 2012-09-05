@@ -1,6 +1,11 @@
 SEHumanizedTimeDiff
 ====================
 
+Short Version like Instagram App
+--------------------------------
+
+SEHumanizedTime with short date format like Instagram App.
+
 Introduction
 ---------------------
 
