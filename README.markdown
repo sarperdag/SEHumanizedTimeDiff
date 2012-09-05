@@ -22,12 +22,13 @@ myLabel.text = [[NSDate dateWithTimeIntervalSinceNow:-360] stringWithHumanizedTi
 Screenshots
 ---------------------
 
-![alt text](http://dl.dropbox.com/u/1124427/sehumanizedtime.png "SEHumanizedTime")
-
-
-Coming Soon
----------------------
-- German, French, Spanish and Italian language support.
+2010-09-14 | if > 1 year
+2Apr | if > 1 months but in the same year
+3w
+2d
+4h
+9m
+now
 
 
 License

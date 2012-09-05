@@ -1,24 +1,14 @@
-"YearKey" = "a year";
+"YearKey" = "y";
 
-"YearsKey" = "y";
+"WeekKey" = "w";
 
 "DayKey" = "d";
 
-"DaysKey" = "d";
-
-"HoursKey" = "h";
-
-"HourKey" = "1h";
+"HourKey" = "h";
 
 "MinuteKey" = "m";
 
-"MinutesKey" = "m";
-
-"SecondKey" = "Just now";
-
-"SecondsKey" = "s";
-
-"AgoKey" = "";
+"SecondKey" = "now";
 
 "LaterKey" = "later";
 
