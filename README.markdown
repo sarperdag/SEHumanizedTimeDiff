@@ -19,22 +19,22 @@ Just add SEHumanizedTime folder into your project and use it as below:
 
 myLabel.text = [[NSDate dateWithTimeIntervalSinceNow:-360] stringWithHumanizedTimeDifference]; 
 
-Screenshots
+Representation
 ---------------------
 
-2010-09-14 | if > 1 year
+Year : 2010-09-14 | if > 1 year
 
-2Apr | if > 1 months but in the same year
+Months : 2Apr | if > 1 months but in the same year
 
-3w
+Weeks : 3w
 
-2d
+Days : 2d
 
-4h
+Hours : 4h
 
-9m
+Minutes : 9m
 
-now
+Secondes : now
 
 
 License
