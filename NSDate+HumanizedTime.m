@@ -57,7 +57,7 @@
             }
             else {
                 if (hoursDiff == 1)
-                    return [NSString stringWithFormat:@"%@ %@", NSLocalizedString(@"AboutKey", @""), NSLocalizedString(@"HourKey", @"")];
+                    return [NSString stringWithFormat:@"%@ 1%@", NSLocalizedString(@"AboutKey", @""), NSLocalizedString(@"HourKey", @"")];
                 else
                     return [NSString stringWithFormat:@"%d%@", hoursDiff, NSLocalizedString(@"HourKey", @"")];
                   }
