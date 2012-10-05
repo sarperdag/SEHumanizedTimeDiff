@@ -36,6 +36,22 @@ Minutes : 9m
 
 Secondes : now
 
+Representation (FullString Mode | Timer mode)
+---------------------
+
+Year : Until 2010-09-14 | if > 1 year
+
+Months : Until 2Apr | if > 1 months but in the same year
+
+Weeks : 3 week(s) left | With dynamic pluralize
+
+Days : 2 day(s) left | With dynamic pluralize
+
+Hours : 4 hour(s) left | With dynamic pluralize
+
+Minutes : 9 minute(s) left | With dynamic pluralize
+
+Secondes : 3 secondes left
 
 License
 ---------------------

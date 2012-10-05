@@ -8,10 +8,19 @@
 
 #import "NSDate+HumanizedTime.h"
 
+#define LOCALISABLE_FULL @"Localizable_full"
+#define LOCALISABLE_FULL_UNTIL @"Until"
+#define LOCALISABLE_FULL_LEFT @"left"
+
 @implementation NSDate (HumanizedTime)
 
-- (NSString *) stringWithHumanizedTimeDifference {
-    
+- (NSString *) stringWithHumanizedTimeDifference
+{
+  return [self stringWithHumanizedTimeDifference:NO];
+}
+
+- (NSString *) stringWithHumanizedTimeDifference:(bool) fullStrings
+{   
     NSTimeInterval timeInterval = [self timeIntervalSinceNow];
     
     int secondsInADay = 3600*24;
@@ -24,41 +33,65 @@
     int daysDiff = abs(timeInterval/secondsInADay);
     int hoursDiff = abs((abs(timeInterval) - (daysDiff * secondsInADay)) / 3600);
     int minutesDiff = abs((abs(timeInterval) - ((daysDiff * secondsInADay) + (hoursDiff * 60))) / 60);
+    int secondsDiff = abs((abs(timeInterval) - ((daysDiff * secondsInADay) + (minutesDiff * 60))));
     
     if (yearsDiff > 1)
     {
          NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
          dateFormatter.dateFormat = @"YYYY-MM-dd";
-         return [dateFormatter stringFromDate:[NSDate dateWithTimeIntervalSinceNow:timeInterval]];
+         if (fullStrings)
+           return [NSString stringWithFormat:@"%@ %@", LOCALISABLE_FULL_UNTIL, [dateFormatter stringFromDate:[NSDate dateWithTimeIntervalSinceNow:timeInterval]]];
+         else
+           return [dateFormatter stringFromDate:[NSDate dateWithTimeIntervalSinceNow:timeInterval]];
     }
   
     if (monthsDiff > 0)
     {
         NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
         dateFormatter.dateFormat = @"dd MMM";
-        return [dateFormatter stringFromDate:[NSDate dateWithTimeIntervalSinceNow:timeInterval]];
+        if (fullStrings)
+          return [NSString stringWithFormat:@"%@ %@", LOCALISABLE_FULL_UNTIL, [dateFormatter stringFromDate:[NSDate dateWithTimeIntervalSinceNow:timeInterval]]];
+        else
+          return [dateFormatter stringFromDate:[NSDate dateWithTimeIntervalSinceNow:timeInterval]];
      }
     else
     {
         if (weeksDiff > 0)
-          return [NSString stringWithFormat:@"%d%@", weeksDiff, NSLocalizedString(@"WeekKey", @"")];
+        {
+          if (fullStrings)
+            return [NSString stringWithFormat:@"%d %@%@ %@", weeksDiff,  NSLocalizedStringFromTable(@"WeekKey", LOCALISABLE_FULL, @""), (weeksDiff == 1 ? @"" : @"s"), LOCALISABLE_FULL_LEFT];
+          else
+            return [NSString stringWithFormat:@"%d%@", weeksDiff, NSLocalizedString(@"WeekKey", @"")];
+        }
         else
         {
-          if (daysDiff > 0) {
+          if (daysDiff > 0){
+            if (fullStrings)
+              return [NSString stringWithFormat:@"%d %@%@ %@", daysDiff, NSLocalizedStringFromTable(@"DayKey", LOCALISABLE_FULL, @""),  (daysDiff == 1 ? @"" : @"s"), LOCALISABLE_FULL_LEFT];
+            else
               return [NSString stringWithFormat:@"%d%@", daysDiff, NSLocalizedString(@"DayKey", @"")];
           }
           else 
           {
             if (hoursDiff == 0) {
                 if (minutesDiff == 0)
+                  if (fullStrings)
+                    return [NSString stringWithFormat:@"%d %@s %@", secondsDiff, NSLocalizedStringFromTable(@"SecondKey", LOCALISABLE_FULL, @""), LOCALISABLE_FULL_LEFT];
+                  else
                     return [NSString stringWithFormat:@"%@", NSLocalizedString(@"SecondKey", @"")];
-                else 
+                else
+                  if (fullStrings)
+                    return [NSString stringWithFormat:@"%d %@%@ %@", minutesDiff, NSLocalizedStringFromTable(@"MinuteKey", LOCALISABLE_FULL, @""), (minutesDiff == 1 ? @"" : @"s"), LOCALISABLE_FULL_LEFT];
+                  else
                     return [NSString stringWithFormat:@"%d%@", minutesDiff, NSLocalizedString(@"MinuteKey", @"")];
             }
             else {
                 if (hoursDiff == 1)
                     return [NSString stringWithFormat:@"%@ 1%@", NSLocalizedString(@"AboutKey", @""), NSLocalizedString(@"HourKey", @"")];
                 else
+                  if (fullStrings)
+                    return [NSString stringWithFormat:@"%d %@%@ %@", hoursDiff, NSLocalizedStringFromTable(@"HourKey", LOCALISABLE_FULL, @""), (hoursDiff == 1 ? @"" : @"s"), LOCALISABLE_FULL_LEFT];
+                  else
                     return [NSString stringWithFormat:@"%d%@", hoursDiff, NSLocalizedString(@"HourKey", @"")];
                   }
             }
