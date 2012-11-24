@@ -140,6 +140,10 @@ Minutes  : 9 minute(s) ago  | With dynamic pluralize
 Secondes : 3 seconde(s) ago | With dynamic pluralize
 ```
 
+To do
+---------------------
+French, German, [...], Spanish translations 
+
 License
 ---------------------
 
