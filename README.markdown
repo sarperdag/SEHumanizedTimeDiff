@@ -55,6 +55,8 @@ Minutes : 9m
 Secondes : 3s
 ```
 
+![My image](kwent.github.com/SEHumanizedTimeDiff/Screenshots/1.png)
+
 NSDateHumanizedSuffixNone && withFullString:YES
 ---------------------
 
