@@ -13,7 +13,6 @@
 		6F50FEDC1660E26700F1CCE4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F50FEDB1660E26700F1CCE4 /* main.m */; };
 		6F50FEE01660E26700F1CCE4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F50FEDF1660E26700F1CCE4 /* AppDelegate.m */; };
 		6F50FEE91660E26700F1CCE4 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F50FEE81660E26700F1CCE4 /* MasterViewController.m */; };
-		6F50FF041660E47E00F1CCE4 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F50FF031660E47E00F1CCE4 /* Default-568h@2x.png */; };
 		6F50FF0C1660EDD500F1CCE4 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6F50FF061660EDD500F1CCE4 /* Localizable.strings */; };
 		6F50FF0D1660EDD500F1CCE4 /* Localizable_full.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6F50FF081660EDD500F1CCE4 /* Localizable_full.strings */; };
 		6F50FF0E1660EDD500F1CCE4 /* NSDate+HumanizedTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F50FF0B1660EDD500F1CCE4 /* NSDate+HumanizedTime.m */; };
@@ -31,7 +30,6 @@
 		6F50FEDF1660E26700F1CCE4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		6F50FEE71660E26700F1CCE4 /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
 		6F50FEE81660E26700F1CCE4 /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
-		6F50FF031660E47E00F1CCE4 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../Default-568h@2x.png"; sourceTree = "<group>"; };
 		6F50FF071660EDD500F1CCE4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		6F50FF091660EDD500F1CCE4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable_full.strings; sourceTree = "<group>"; };
 		6F50FF0A1660EDD500F1CCE4 /* NSDate+HumanizedTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+HumanizedTime.h"; sourceTree = "<group>"; };
@@ -83,7 +81,6 @@
 			isa = PBXGroup;
 			children = (
 				6F50FF051660EDD500F1CCE4 /* SEHumanizedTime */,
-				6F50FF031660E47E00F1CCE4 /* Default-568h@2x.png */,
 				6F50FEDD1660E26700F1CCE4 /* SEHumanizedTimeDiffDemo-Prefix.pch */,
 				6F50FED71660E26700F1CCE4 /* SEHumanizedTimeDiffDemo-Info.plist */,
 				6F50FEDB1660E26700F1CCE4 /* main.m */,
@@ -157,7 +154,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6F50FF041660E47E00F1CCE4 /* Default-568h@2x.png in Resources */,
 				6F50FF0C1660EDD500F1CCE4 /* Localizable.strings in Resources */,
 				6F50FF0D1660EDD500F1CCE4 /* Localizable_full.strings in Resources */,
 			);
