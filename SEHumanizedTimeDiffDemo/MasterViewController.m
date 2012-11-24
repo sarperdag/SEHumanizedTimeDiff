@@ -16,12 +16,6 @@
   [super viewDidLoad];
   self.view.frame = [[UIScreen mainScreen] bounds];
   self.view.backgroundColor = [UIColor whiteColor];
-    
-//  NSDate *now = [NSDate date];
-//	NSDateFormatter *formatter = nil;
-//	formatter = [[NSDateFormatter alloc] init];
-//	[formatter setTimeStyle:NSDateFormatterShortStyle];
-//	[timeNowLabel setText:[formatter stringFromDate:now]];
   
   items = [NSArray arrayWithObjects:
   [NSDate dateWithTimeIntervalSinceNow:-10],
