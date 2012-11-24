@@ -56,7 +56,7 @@ Secondes : 3s
 ```
 
 <p align="center">
-  <img src="Screenshots/1.png?raw=true" alt="NSDateHumanizedSuffixNone | withFullString:NO"/>
+  <img src="https://raw.github.com/kwent/SEHumanizedTimeDiff/master/Screenshots/1.png" alt="NSDateHumanizedSuffixNone | withFullString:NO"/>
 </p>
 
 NSDateHumanizedSuffixNone | withFullString:YES
@@ -79,7 +79,7 @@ Secondes : 3 seconde(s) | With dynamic pluralize
 ```
 
 <p align="center">
-  <img src="Screenshots/2.png?raw=true" alt="NSDateHumanizedSuffixNone | withFullString:YES"/>
+  <img src="https://raw.github.com/kwent/SEHumanizedTimeDiff/master/Screenshots/2.png" alt="NSDateHumanizedSuffixNone | withFullString:YES"/>
 </p>
 
 
@@ -103,7 +103,7 @@ Secondes : 3s left
 ```
 
 <p align="center">
-  <img src="Screenshots/3.png?raw=true" alt="NSDateHumanizedSuffixLeft | withFullString:NO"/>
+  <img src="https://raw.github.com/kwent/SEHumanizedTimeDiff/master/Screenshots/3.png" alt="NSDateHumanizedSuffixLeft | withFullString:NO"/>
 </p>
 
 
@@ -127,7 +127,7 @@ Secondes : 3 seconde(s) left | With dynamic pluralize
 ```
 
 <p align="center">
-  <img src="Screenshots/4.png?raw=true" alt="NSDateHumanizedSuffixLeft | withFullString:YES"/>
+  <img src="https://raw.github.com/kwent/SEHumanizedTimeDiff/master/Screenshots/4.png" alt="NSDateHumanizedSuffixLeft | withFullString:YES"/>
 </p>
 
 
@@ -150,7 +150,7 @@ Minutes : 9m ago
 Secondes : 3s ago
 ```
 <p align="center">
-  <img src="Screenshots/5.png?raw=true" alt="NSDateHumanizedSuffixAgo | withFullString:NO"/>
+  <img src="https://raw.github.com/kwent/SEHumanizedTimeDiff/master/Screenshots/5.png" alt="NSDateHumanizedSuffixAgo | withFullString:NO"/>
 </p>
 
 NSDateHumanizedSuffixAgo | withFullString:YES
@@ -172,7 +172,7 @@ Minutes : 9 minute(s) ago        | With dynamic pluralize
 Secondes : 3 seconde(s) ago      | With dynamic pluralize
 ```
 <p align="center">
-  <img src="Screenshots/6.png?raw=true" alt="NSDateHumanizedSuffixAgo | withFullString:YES"/>
+  <img src="https://raw.github.com/kwent/SEHumanizedTimeDiff/master/Screenshots/6.png" alt="NSDateHumanizedSuffixAgo | withFullString:YES"/>
 </p>
 
 License
