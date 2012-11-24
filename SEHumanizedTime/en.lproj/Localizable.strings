@@ -1,26 +1,12 @@
-"YearKey" = "a year";
+"YearKey" = "y";
 
-"YearsKey" = "years";
+"WeekKey" = "w";
 
-"DayKey" = "day";
+"DayKey" = "d";
 
-"DaysKey" = "days";
+"HourKey" = "h";
 
-"HoursKey" = "hours";
+"MinuteKey" = "m";
 
-"HourKey" = "an hour";
-
-"MinuteKey" = "minute";
-
-"MinutesKey" = "minutes";
-
-"SecondKey" = "a few seconds";
-
-"SecondsKey" = "seconds";
-
-"AgoKey" = "ago";
-
-"LaterKey" = "later";
-
-"AboutKey" = "about";
+"SecondKey" = "s";
 

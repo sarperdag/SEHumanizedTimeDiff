@@ -2,8 +2,8 @@
 //  main.m
 //  SEHumanizedTimeDiffDemo
 //
-//  Created by Sarp Erdag on 3/3/12.
-//  Copyright (c) 2012 Sarp Erdag. All rights reserved.
+//  Created by Rousseau Quentin on 24/11/12.
+//  Copyright (c) 2012 Rousseau Quentin. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
@@ -12,7 +12,7 @@
 
 int main(int argc, char *argv[])
 {
-    @autoreleasepool {
-        return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
-    }
+  @autoreleasepool {
+      return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
+  }
 }
