@@ -36,7 +36,7 @@ NSDateHumanizedSuffixLeft
 NSDateHumanizedSuffixAgo
 ```
 
-NSDateHumanizedSuffixNone && withFullString:NO
+NSDateHumanizedSuffixNone | withFullString:NO
 ---------------------
 
 ``` plain
@@ -56,10 +56,10 @@ Secondes : 3s
 ```
 
 <p align="center">
-  <img src="SEHumanizedTimeDiff/Screenshots/1.png?raw=true" alt="Sublime's custom image"/>
+  <img src="Screenshots/1.png?raw=true" alt="NSDateHumanizedSuffixNone | withFullString:NO"/>
 </p>
 
-NSDateHumanizedSuffixNone && withFullString:YES
+NSDateHumanizedSuffixNone | withFullString:YES
 ---------------------
 
 ``` plain
@@ -78,7 +78,12 @@ Minutes : 9 minute(s)   | With dynamic pluralize
 Secondes : 3 seconde(s) | With dynamic pluralize
 ```
 
-NSDateHumanizedSuffixLeft | && withFullString:NO
+<p align="center">
+  <img src="Screenshots/2.png?raw=true" alt="NSDateHumanizedSuffixNone | withFullString:YES"/>
+</p>
+
+
+NSDateHumanizedSuffixLeft | withFullString:NO
 ---------------------
 
 ``` plain
@@ -97,7 +102,12 @@ Minutes : 9m left
 Secondes : 3s left
 ```
 
-NSDateHumanizedSuffixLeft | && withFullString:YES
+<p align="center">
+  <img src="Screenshots/3.png?raw=true" alt="NSDateHumanizedSuffixLeft | withFullString:NO"/>
+</p>
+
+
+NSDateHumanizedSuffixLeft | withFullString:YES
 ---------------------
 
 ``` plain
@@ -116,7 +126,12 @@ Minutes : 9 minute(s) left   | With dynamic pluralize
 Secondes : 3 seconde(s) left | With dynamic pluralize
 ```
 
-NSDateHumanizedSuffixAgo | && withFullString:NO
+<p align="center">
+  <img src="Screenshots/4.png?raw=true" alt="NSDateHumanizedSuffixLeft | withFullString:YES"/>
+</p>
+
+
+NSDateHumanizedSuffixAgo | withFullString:NO
 ---------------------
 
 ``` plain
@@ -134,13 +149,15 @@ Minutes : 9m ago
 
 Secondes : 3s ago
 ```
+<p align="center">
+  <img src="Screenshots/5.png?raw=true" alt="NSDateHumanizedSuffixAgo | withFullString:NO"/>
+</p>
 
-
-NSDateHumanizedSuffixAgo | && withFullString:YES
+NSDateHumanizedSuffixAgo | withFullString:YES
 ---------------------
 
 ``` plain
-Year : 2010-09-14                 | if > 1 year
+Year : 2010-09-14                | if > 1 year
 
 Months : 2 April                 | if > 1 months but in the same year
 
@@ -154,7 +171,9 @@ Minutes : 9 minute(s) ago        | With dynamic pluralize
 
 Secondes : 3 seconde(s) ago      | With dynamic pluralize
 ```
-
+<p align="center">
+  <img src="Screenshots/6.png?raw=true" alt="NSDateHumanizedSuffixAgo | withFullString:YES"/>
+</p>
 
 License
 ---------------------
