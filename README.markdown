@@ -18,13 +18,18 @@ Usage
 Just add SEHumanizedTime folder into your project and use it as below:
 
 ``` objective-c
+
+//1 minute
 myLabel.text = [[NSDate dateWithTimeIntervalSinceNow:-360]
                 stringWithHumanizedTimeDifference:NSDateHumanizedSuffixNone
                 withFullString:NO];
+//This will return @"1m"
 
-myLabel.text = [[NSDate dateWithTimeIntervalSinceNow:-360]
+//2 days
+myLabel.text = [[NSDate dateWithTimeIntervalSinceNow:-3600*24*2]
                 stringWithHumanizedTimeDifference:NSDateHumanizedSuffixAgo
                 withFullString:YES];
+//This will return @"2 days ago"
 ```
 
 Enumerations
@@ -142,7 +147,7 @@ Secondes : 3 seconde(s) ago | With dynamic pluralize
 
 To do
 ---------------------
-French, German, [...], Spanish translations 
+- French, German, [...], Spanish language support.
 
 License
 ---------------------
