@@ -149,12 +149,17 @@ To do
 ---------------------
 - French, German, [...], Spanish language support.
 
+Authors
+---------------------
+Sarp Erdag <sarp.erdag@apperto.com> - http://www.sarperdag.com
+Quentin Rousseau <contact@quentin.rousseau.fr> - http://www.quentinrousseau.fr
+
 License
 ---------------------
 
 Open Source Initiative OSI - The MIT License (MIT):Licensing [OSI Approved License] The MIT License (MIT)
 
-Copyright (c) 2011 Sarp Erdag
+Copyright (c) 2012 Sarp Erdag <sarp.erdag@apperto.com> & Quentin Rousseau <contact@quentin.rousseau.fr>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
