@@ -8,9 +8,5 @@
 
 "MinuteKey" = "m";
 
-"SecondKey" = "now";
-
-"LaterKey" = "later";
-
-"AboutKey" = "about";
+"SecondKey" = "s";
 
