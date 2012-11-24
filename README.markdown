@@ -18,11 +18,13 @@ Usage
 Just add SEHumanizedTime folder into your project and use it as below:
 
 ``` objective-c
+myLabel.text = [[NSDate dateWithTimeIntervalSinceNow:-360]
+                stringWithHumanizedTimeDifference:NSDateHumanizedSuffixNone
+                withFullString:NO];
 
-myLabel.text = [[NSDate dateWithTimeIntervalSinceNow:-360] stringWithHumanizedTimeDifference:NSDateHumanizedSuffixNone withFullString:NO];
-
-myLabel.text = [[NSDate dateWithTimeIntervalSinceNow:-360] stringWithHumanizedTimeDifference:NSDateHumanizedSuffixAgo withFullString:YES];
-
+myLabel.text = [[NSDate dateWithTimeIntervalSinceNow:-360]
+                stringWithHumanizedTimeDifference:NSDateHumanizedSuffixAgo
+                withFullString:YES];
 ```
 
 Enumerations
@@ -57,19 +59,19 @@ NSDateHumanizedSuffixNone && withFullString:YES
 ---------------------
 
 ``` plain
-Year : 2010-09-14 | if > 1 year
+Year : 2010-09-14       | if > 1 year
 
-Months : 2 April | if > 1 months but in the same year
+Months : 2 April        | if > 1 months but in the same year
 
-Weeks : 3 week(s)
+Weeks : 3 week(s)       | With dynamic pluralize
 
-Days : 2 day(s)
+Days : 2 day(s)         | With dynamic pluralize
 
-Hours : 4 hour(s)
+Hours : 4 hour(s)       | With dynamic pluralize
 
-Minutes : 9 minute(s)
+Minutes : 9 minute(s)   | With dynamic pluralize
 
-Secondes : 3 seconde(s)
+Secondes : 3 seconde(s) | With dynamic pluralize
 ```
 
 NSDateHumanizedSuffixLeft | && withFullString:NO
@@ -78,15 +80,15 @@ NSDateHumanizedSuffixLeft | && withFullString:NO
 ``` plain
 Year : Until 2010-09-14 | if > 1 year
 
-Months : Until 2Apr | if > 1 months but in the same year
+Months : Until 2Apr     | if > 1 months but in the same year
 
-Weeks : 3w left | With dynamic pluralize
+Weeks : 3w left
 
-Days : 2d left | With dynamic pluralize
+Days : 2d left
 
-Hours : 4h left | With dynamic pluralize
+Hours : 4h left
 
-Minutes : 9m left | With dynamic pluralize
+Minutes : 9m left
 
 Secondes : 3s left
 ```
@@ -95,19 +97,19 @@ NSDateHumanizedSuffixLeft | && withFullString:YES
 ---------------------
 
 ``` plain
-Year : Until 2010-09-14 | if > 1 year
+Year : Until 2010-09-14      | if > 1 year
 
-Months : Until 2April | if > 1 months but in the same year
+Months : Until 2April        | if > 1 months but in the same year
 
-Weeks : 3 week(s) left | With dynamic pluralize
+Weeks : 3 week(s) left       | With dynamic pluralize
 
-Days : 2 day(s) left | With dynamic pluralize
+Days : 2 day(s) left         | With dynamic pluralize
 
-Hours : 4 hour(s) left | With dynamic pluralize
+Hours : 4 hour(s) left       | With dynamic pluralize
 
-Minutes : 9 minute(s) left | With dynamic pluralize
+Minutes : 9 minute(s) left   | With dynamic pluralize
 
-Secondes : 3 seconde(s) left
+Secondes : 3 seconde(s) left | With dynamic pluralize
 ```
 
 NSDateHumanizedSuffixAgo | && withFullString:NO
@@ -116,15 +118,15 @@ NSDateHumanizedSuffixAgo | && withFullString:NO
 ``` plain
 Year : 2010-09-14 | if > 1 year
 
-Months : 2Apr | if > 1 months but in the same year
+Months : 2Apr     | if > 1 months but in the same year
 
-Weeks : 3w ago | With dynamic pluralize
+Weeks : 3w ago
 
-Days : 2d ago | With dynamic pluralize
+Days : 2d ago
 
-Hours : 4h ago | With dynamic pluralize
+Hours : 4h ago
 
-Minutes : 9m ago | With dynamic pluralize
+Minutes : 9m ago
 
 Secondes : 3s ago
 ```
@@ -134,19 +136,19 @@ NSDateHumanizedSuffixAgo | && withFullString:YES
 ---------------------
 
 ``` plain
-Year : 2010-09-14 | if > 1 year
+Year : 2010-09-14                | if > 1 year
 
-Months : 2 April | if > 1 months but in the same year
+Months : 2 April                 | if > 1 months but in the same year
 
-Weeks : 3 week(s) ago | With dynamic pluralize
+Weeks : 3 week(s) ago            | With dynamic pluralize
 
-Days : 2 day(s) ago | With dynamic pluralize
+Days : 2 day(s) ago              | With dynamic pluralize
 
-Hours : 4 hour(s) ago | With dynamic pluralize
+Hours : 4 hour(s) ago            | With dynamic pluralize
 
-Minutes : 9 minute(s) ago | With dynamic pluralize
+Minutes : 9 minute(s) ago        | With dynamic pluralize
 
-Secondes : 3 seconde(s) ago left
+Secondes : 3 seconde(s) ago left | With dynamic pluralize
 ```
 
 
