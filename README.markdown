@@ -39,141 +39,106 @@ NSDateHumanizedSuffixAgo
 NSDateHumanizedSuffixNone | withFullString:NO
 ---------------------
 
-``` plain
-Year : 2010-09-14 | if > 1 year
-
-Months : 2Apr.    | if > 1 months but in the same year
-
-Weeks : 3w
-
-Days : 2d
-
-Hours : 4h
-
-Minutes : 9m
-
-Secondes : 3s
-```
-
 <p align="center">
   <img src="https://raw.github.com/kwent/SEHumanizedTimeDiff/master/Screenshots/1.png" alt="NSDateHumanizedSuffixNone | withFullString:NO"/>
 </p>
 
+``` plain
+Year     : 2010-09-14 | if > 1 year
+Months   : 2Apr.      | if > 1 month but in the same year
+Weeks    : 3w
+Days     : 2d
+Hours    : 4h
+Minutes  : 9m
+Secondes : 3s
+```
+
+
 NSDateHumanizedSuffixNone | withFullString:YES
 ---------------------
-
-``` plain
-Year : 2010-09-14       | if > 1 year
-
-Months : 2 April        | if > 1 months but in the same year
-
-Weeks : 3 week(s)       | With dynamic pluralize
-
-Days : 2 day(s)         | With dynamic pluralize
-
-Hours : 4 hour(s)       | With dynamic pluralize
-
-Minutes : 9 minute(s)   | With dynamic pluralize
-
-Secondes : 3 seconde(s) | With dynamic pluralize
-```
 
 <p align="center">
   <img src="https://raw.github.com/kwent/SEHumanizedTimeDiff/master/Screenshots/2.png" alt="NSDateHumanizedSuffixNone | withFullString:YES"/>
 </p>
 
+``` plain
+Year     : 2010-09-14   | if > 1 year
+Months   : 2 April      | if > 1 month but in the same year
+Weeks    : 3 week(s)    | With dynamic pluralize
+Days     : 2 day(s)     | With dynamic pluralize
+Hours    : 4 hour(s)    | With dynamic pluralize
+Minutes  : 9 minute(s)  | With dynamic pluralize
+Secondes : 3 seconde(s) | With dynamic pluralize
+```
 
 NSDateHumanizedSuffixLeft | withFullString:NO
 ---------------------
-
-``` plain
-Year : Until the 2010-09-14 | if > 1 year
-
-Months : Until the 2Apr.    | if > 1 months but in the same year
-
-Weeks : 3w left
-
-Days : 2d left
-
-Hours : 4h left
-
-Minutes : 9m left
-
-Secondes : 3s left
-```
 
 <p align="center">
   <img src="https://raw.github.com/kwent/SEHumanizedTimeDiff/master/Screenshots/3.png" alt="NSDateHumanizedSuffixLeft | withFullString:NO"/>
 </p>
 
+``` plain
+Year     : Until the 2010-09-14 | if > 1 year
+Months   : Until the 2Apr.      | if > 1 month but in the same year
+Weeks    : 3w left
+Days     : 2d left
+Hours    : 4h left
+Minutes  : 9m left
+Secondes : 3s left
+```
+
 
 NSDateHumanizedSuffixLeft | withFullString:YES
 ---------------------
-
-``` plain
-Year : Until the 2010-09-14      | if > 1 year
-
-Months : Until the 2April        | if > 1 months but in the same year
-
-Weeks : 3 week(s) left       | With dynamic pluralize
-
-Days : 2 day(s) left         | With dynamic pluralize
-
-Hours : 4 hour(s) left       | With dynamic pluralize
-
-Minutes : 9 minute(s) left   | With dynamic pluralize
-
-Secondes : 3 seconde(s) left | With dynamic pluralize
-```
 
 <p align="center">
   <img src="https://raw.github.com/kwent/SEHumanizedTimeDiff/master/Screenshots/4.png" alt="NSDateHumanizedSuffixLeft | withFullString:YES"/>
 </p>
 
+``` plain
+Year     : Until the 2010-09-14 | if > 1 year
+Months   : Until the 2April     | if > 1 month but in the same year
+Weeks    : 3 week(s) left       | With dynamic pluralize
+Days     : 2 day(s) left        | With dynamic pluralize
+Hours    : 4 hour(s) left       | With dynamic pluralize
+Minutes  : 9 minute(s) left     | With dynamic pluralize
+Secondes : 3 seconde(s) left    | With dynamic pluralize
+```
 
 NSDateHumanizedSuffixAgo | withFullString:NO
 ---------------------
 
-``` plain
-Year : 2010-09-14 | if > 1 year
-
-Months : 2Apr.    | if > 1 months but in the same year
-
-Weeks : 3w ago
-
-Days : 2d ago
-
-Hours : 4h ago
-
-Minutes : 9m ago
-
-Secondes : 3s ago
-```
 <p align="center">
   <img src="https://raw.github.com/kwent/SEHumanizedTimeDiff/master/Screenshots/5.png" alt="NSDateHumanizedSuffixAgo | withFullString:NO"/>
 </p>
 
+``` plain
+Year     : 2010-09-14 | if > 1 year
+Months   : 2Apr.      | if > 1 month but in the same year
+Weeks    : 3w ago
+Days     : 2d ago
+Hours    : 4h ago
+Minutes  : 9m ago
+Secondes : 3s ago
+```
+
 NSDateHumanizedSuffixAgo | withFullString:YES
 ---------------------
 
-``` plain
-Year : 2010-09-14                | if > 1 year
-
-Months : 2 April                 | if > 1 months but in the same year
-
-Weeks : 3 week(s) ago            | With dynamic pluralize
-
-Days : 2 day(s) ago              | With dynamic pluralize
-
-Hours : 4 hour(s) ago            | With dynamic pluralize
-
-Minutes : 9 minute(s) ago        | With dynamic pluralize
-
-Secondes : 3 seconde(s) ago      | With dynamic pluralize
-```
 <p align="center">
   <img src="https://raw.github.com/kwent/SEHumanizedTimeDiff/master/Screenshots/6.png" alt="NSDateHumanizedSuffixAgo | withFullString:YES"/>
 </p>
+
+``` plain
+Year     : 2010-09-14       | if > 1 year
+Months   : 2 April          | if > 1 month but in the same year
+Weeks    : 3 week(s) ago    | With dynamic pluralize
+Days     : 2 day(s) ago     | With dynamic pluralize
+Hours    : 4 hour(s) ago    | With dynamic pluralize
+Minutes  : 9 minute(s) ago  | With dynamic pluralize
+Secondes : 3 seconde(s) ago | With dynamic pluralize
+```
 
 License
 ---------------------
