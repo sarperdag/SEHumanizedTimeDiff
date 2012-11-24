@@ -151,8 +151,8 @@ To do
 
 Authors
 ---------------------
-Sarp Erdag <sarp.erdag@apperto.com> - http://www.sarperdag.com
-Quentin Rousseau <contact@quentin.rousseau.fr> - http://www.quentinrousseau.fr
+- Sarp Erdag <sarp.erdag@apperto.com> - http://www.sarperdag.com
+- Quentin Rousseau <contact@quentin.rousseau.fr> - http://www.quentinrousseau.fr
 
 License
 ---------------------
