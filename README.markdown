@@ -55,7 +55,9 @@ Minutes : 9m
 Secondes : 3s
 ```
 
-![My image](kwent.github.com/SEHumanizedTimeDiff/Screenshots/1.png)
+<p align="center">
+  <img src="SEHumanizedTimeDiff/Screenshots/1.png?raw=true" alt="Sublime's custom image"/>
+</p>
 
 NSDateHumanizedSuffixNone && withFullString:YES
 ---------------------
