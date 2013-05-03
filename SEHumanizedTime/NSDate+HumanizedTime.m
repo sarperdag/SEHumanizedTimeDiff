@@ -58,7 +58,10 @@
   
     NSDateFormatter *full_dateDateFormatter = [[NSDateFormatter alloc] init];
     full_dateDateFormatter.dateFormat = @"dd MMMM";
-  
+
+    NSDateFormatter *dayFormatter = [[NSDateFormatter alloc] init];
+    [dayFormatter setDateFormat: (fullStrings) ? @"EEEE" : @"EEE"];
+
     NSString *translation_table = (fullStrings) ? LOCALISABLE_FULL : LOCALISABLE_SHORT;
   
     //NSDateHumanizedSuffixNone
@@ -154,11 +157,15 @@
       }
       else
       {
-        if (daysDiff > 0)
+        if (daysDiff > 0 && daysDiff <= 4)
+        {
+          return [dayFormatter stringFromDate:self];
+        }
+        else if (daysDiff > 4)
         {
           return (fullStrings)? full_dayString : dayString;
         }
-        else 
+        else
         {
           if (hoursDiff == 0)
           {
