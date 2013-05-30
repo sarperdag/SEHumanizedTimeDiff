@@ -8,11 +8,8 @@
 
 #import "NSDate+HumanizedTime.h"
 
-#define LOCALISABLE_FULL @"Localizable_full"
-#define LOCALISABLE_SHORT @"Localizable"
-#define SUFFIX_UNTIL @"Until the "
-#define PREFIX_LEFT @" left"
-#define PREFIX_AGO  @" ago"
+#define LOCALISABLE_FULL @"SEHumanizedTime_full"
+#define LOCALISABLE_SHORT @"SEHumanizedTime"
 
 @implementation NSDate (HumanizedTime)
 
@@ -54,7 +51,7 @@
     full_yearDateFormatter.dateFormat = @"YYYY-MM-dd";
   
     NSDateFormatter *dateDateFormatter = [[NSDateFormatter alloc] init];
-    dateDateFormatter.dateFormat = @"dd MMM.";
+    dateDateFormatter.dateFormat = @"dd MMM";
   
     NSDateFormatter *full_dateDateFormatter = [[NSDateFormatter alloc] init];
     full_dateDateFormatter.dateFormat = @"dd MMMM";
@@ -67,29 +64,29 @@
     //NSDateHumanizedSuffixNone
     yearString   = [yearDateFormatter stringFromDate:[NSDate dateWithTimeIntervalSinceNow:timeInterval]];
     dateString   = [dateDateFormatter stringFromDate:[NSDate dateWithTimeIntervalSinceNow:timeInterval]];
-    weekString   = [NSString stringWithFormat:@"%d%@", weeksDiff, NSLocalizedStringFromTable(@"WeekKey", translation_table, @"")];
-    dayString    = [NSString stringWithFormat:@"%d%@", daysDiff, NSLocalizedStringFromTable(@"DayKey", translation_table, @"")];
-    hourString   = [NSString stringWithFormat:@"%d%@", hoursDiff, NSLocalizedStringFromTable(@"HourKey", translation_table, @"")];
-    minuteString = [NSString stringWithFormat:@"%d%@", minutesDiff, NSLocalizedStringFromTable(@"MinuteKey", translation_table, @"")];
-    secondString = [NSString stringWithFormat:@"%d%@", secondsDiff, NSLocalizedStringFromTable(@"SecondKey", translation_table, @"")];
+    weekString   = [NSString stringWithFormat:@"%d%@", weeksDiff, NSLocalizedStringFromTable(@"WeekKey", translation_table, nil)];
+    dayString    = [NSString stringWithFormat:@"%d%@", daysDiff, NSLocalizedStringFromTable(@"DayKey", translation_table, nil)];
+    hourString   = [NSString stringWithFormat:@"%d%@", hoursDiff, NSLocalizedStringFromTable(@"HourKey", translation_table, nil)];
+    minuteString = [NSString stringWithFormat:@"%d%@", minutesDiff, NSLocalizedStringFromTable(@"MinuteKey", translation_table, nil)];
+    secondString = [NSString stringWithFormat:@"%d%@", secondsDiff, NSLocalizedStringFromTable(@"SecondKey", translation_table, nil)];
     
     full_yearString   = [full_yearDateFormatter stringFromDate:[NSDate dateWithTimeIntervalSinceNow:timeInterval]];
     full_dateString   = [full_dateDateFormatter stringFromDate:[NSDate dateWithTimeIntervalSinceNow:timeInterval]];
     full_weekString   = [NSString stringWithFormat:@"%d %@%@", weeksDiff,
                          NSLocalizedStringFromTable(@"WeekKey", translation_table, @""),
-                         (weeksDiff == 1) ? @"" : @"s"];
+                         (weeksDiff == 1) ? @"" : NSLocalizedStringFromTable(@"plural", translation_table, nil)];
     full_dayString    = [NSString stringWithFormat:@"%d %@%@", daysDiff,
                          NSLocalizedStringFromTable(@"DayKey", translation_table, @""),
-                         (daysDiff == 1) ? @"" : @"s"];
+                         (daysDiff == 1) ? @"" : NSLocalizedStringFromTable(@"plural", translation_table, nil)];
     full_hourString   = [NSString stringWithFormat:@"%d %@%@", hoursDiff,
                          NSLocalizedStringFromTable(@"HourKey", translation_table, @""),
-                         (hoursDiff == 1) ? @"" : @"s"];
+                         (hoursDiff == 1) ? @"" : NSLocalizedStringFromTable(@"plural", translation_table, nil)];
     full_minuteString = [NSString stringWithFormat:@"%d %@%@", minutesDiff,
                          NSLocalizedStringFromTable(@"MinuteKey", translation_table, @""),
-                         (minutesDiff == 1) ? @"" : @"s"];
+                         (minutesDiff == 1) ? @"" : NSLocalizedStringFromTable(@"plural", translation_table, nil)];
     full_secondString = [NSString stringWithFormat:@"%d %@%@", secondsDiff,
                          NSLocalizedStringFromTable(@"SecondKey", translation_table, @""),
-                         (secondsDiff == 1) ? @"" : @"s"];
+                         (secondsDiff == 1) ? @"" : NSLocalizedStringFromTable(@"plural", translation_table, nil)];
   
     switch (humanizedType)
     {
@@ -98,23 +95,23 @@
       {
         if(!fullStrings)
         {
-          yearString   = [SUFFIX_UNTIL stringByAppendingString:yearString];
-          dateString   = [SUFFIX_UNTIL stringByAppendingString:dateString];
-          weekString   = [weekString stringByAppendingString:PREFIX_LEFT];
-          dayString    = [dayString stringByAppendingString:PREFIX_LEFT];
-          hourString   = [hourString stringByAppendingString:PREFIX_LEFT];
-          minuteString = [minuteString stringByAppendingString:PREFIX_LEFT];
-          secondString = [secondString stringByAppendingString:PREFIX_LEFT];
+          yearString   = [NSLocalizedStringFromTable(@"until", translation_table, nil) stringByAppendingString:yearString];
+          dateString   = [NSLocalizedStringFromTable(@"until", translation_table, nil) stringByAppendingString:dateString];
+          weekString   = [weekString stringByAppendingString:NSLocalizedStringFromTable(@"left", translation_table, nil)];
+          dayString    = [dayString stringByAppendingString:NSLocalizedStringFromTable(@"left", translation_table, nil)];
+          hourString   = [hourString stringByAppendingString:NSLocalizedStringFromTable(@"left", translation_table, nil)];
+          minuteString = [minuteString stringByAppendingString:NSLocalizedStringFromTable(@"left", translation_table, nil)];
+          secondString = [secondString stringByAppendingString:NSLocalizedStringFromTable(@"left", translation_table, nil)];
         }
         else
         {
-          full_yearString   = [SUFFIX_UNTIL stringByAppendingString:full_yearString];
-          full_dateString   = [SUFFIX_UNTIL stringByAppendingString:full_dateString];
-          full_weekString   = [full_weekString stringByAppendingString:PREFIX_LEFT];
-          full_dayString    = [full_dayString stringByAppendingString:PREFIX_LEFT];
-          full_hourString   = [full_hourString stringByAppendingString:PREFIX_LEFT];
-          full_minuteString = [full_minuteString stringByAppendingString:PREFIX_LEFT];
-          full_secondString = [full_secondString stringByAppendingString:PREFIX_LEFT];
+          full_yearString   = [NSLocalizedStringFromTable(@"until", translation_table, nil) stringByAppendingString:full_yearString];
+          full_dateString   = [NSLocalizedStringFromTable(@"until", translation_table, nil) stringByAppendingString:full_dateString];
+          full_weekString   = [full_weekString stringByAppendingString:NSLocalizedStringFromTable(@"left", translation_table, nil)];
+          full_dayString    = [full_dayString stringByAppendingString:NSLocalizedStringFromTable(@"left", translation_table, nil)];
+          full_hourString   = [full_hourString stringByAppendingString:NSLocalizedStringFromTable(@"left", translation_table, nil)];
+          full_minuteString = [full_minuteString stringByAppendingString:NSLocalizedStringFromTable(@"left", translation_table, nil)];
+          full_secondString = [full_secondString stringByAppendingString:NSLocalizedStringFromTable(@"left", translation_table, nil)];
         }
         break;
       }
@@ -122,19 +119,19 @@
       {
         if(!fullStrings)
         {
-          weekString   = [weekString stringByAppendingString:PREFIX_AGO];
-          dayString    = [dayString stringByAppendingString:PREFIX_AGO];
-          hourString   = [hourString stringByAppendingString:PREFIX_AGO];
-          minuteString = [minuteString stringByAppendingString:PREFIX_AGO];
-          secondString = [secondString stringByAppendingString:PREFIX_AGO];
+          weekString   = [weekString stringByAppendingString:NSLocalizedStringFromTable(@"ago", translation_table, nil)];
+          dayString    = [dayString stringByAppendingString:NSLocalizedStringFromTable(@"ago", translation_table, nil)];
+          hourString   = [hourString stringByAppendingString:NSLocalizedStringFromTable(@"ago", translation_table, nil)];
+          minuteString = [minuteString stringByAppendingString:NSLocalizedStringFromTable(@"ago", translation_table, nil)];
+          secondString = [secondString stringByAppendingString:NSLocalizedStringFromTable(@"ago", translation_table, nil)];
         }
         else
         {
-          full_weekString   = [full_weekString stringByAppendingString:PREFIX_AGO];
-          full_dayString    = [full_dayString stringByAppendingString:PREFIX_AGO];
-          full_hourString   = [full_hourString stringByAppendingString:PREFIX_AGO];
-          full_minuteString = [full_minuteString stringByAppendingString:PREFIX_AGO];
-          full_secondString = [full_secondString stringByAppendingString:PREFIX_AGO];
+          full_weekString   = [full_weekString stringByAppendingString:NSLocalizedStringFromTable(@"ago", translation_table, nil)];
+          full_dayString    = [full_dayString stringByAppendingString:NSLocalizedStringFromTable(@"ago", translation_table, nil)];
+          full_hourString   = [full_hourString stringByAppendingString:NSLocalizedStringFromTable(@"ago", translation_table, nil)];
+          full_minuteString = [full_minuteString stringByAppendingString:NSLocalizedStringFromTable(@"ago", translation_table, nil)];
+          full_secondString = [full_secondString stringByAppendingString:NSLocalizedStringFromTable(@"ago", translation_table, nil)];
         }
         break;
       }

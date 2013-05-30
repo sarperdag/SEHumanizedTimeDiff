@@ -1,0 +1,19 @@
+// zh-Hans
+
+"plural" = "";
+"ago" = "前";
+"left" = "后";
+"until" = "";
+
+"YearKey" = " 年";
+
+"WeekKey" = " 周";
+
+"DayKey" = " 天";
+
+"HourKey" = " 小时";
+
+"MinuteKey" = " 分";
+
+"SecondKey" = " 秒";
+
