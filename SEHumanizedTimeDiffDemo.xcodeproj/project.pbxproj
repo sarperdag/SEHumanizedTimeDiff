@@ -19,6 +19,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		21287D421757325A009E68FE /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable_full.strings"; sourceTree = "<group>"; };
+		21287D431757325A009E68FE /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		21287D4417573298009E68FE /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable_full.strings"; sourceTree = "<group>"; };
+		21287D4517573298009E68FE /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		6F50FECB1660E26700F1CCE4 /* SEHumanizedTimeDiffDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SEHumanizedTimeDiffDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F50FECF1660E26700F1CCE4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		6F50FED11660E26700F1CCE4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -138,6 +142,8 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				"zh-Hans",
+				"zh-Hant",
 			);
 			mainGroup = 6F50FEC01660E26700F1CCE4;
 			productRefGroup = 6F50FECC1660E26700F1CCE4 /* Products */;
@@ -180,6 +186,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				6F50FF071660EDD500F1CCE4 /* en */,
+				21287D431757325A009E68FE /* zh-Hans */,
+				21287D4517573298009E68FE /* zh-Hant */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -188,6 +196,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				6F50FF091660EDD500F1CCE4 /* en */,
+				21287D421757325A009E68FE /* zh-Hans */,
+				21287D4417573298009E68FE /* zh-Hant */,
 			);
 			name = Localizable_full.strings;
 			sourceTree = "<group>";

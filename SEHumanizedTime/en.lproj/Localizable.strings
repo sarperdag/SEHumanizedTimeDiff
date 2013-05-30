@@ -1,3 +1,8 @@
+"plural" = "s";
+"ago" = " ago";
+"left" = " left";
+"until" = "Until the ";
+
 "YearKey" = "y";
 
 "WeekKey" = "w";

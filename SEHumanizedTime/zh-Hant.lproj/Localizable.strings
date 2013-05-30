@@ -1,0 +1,19 @@
+// zh-Hant
+
+"plural" = "";
+"ago" = "前";
+"left" = "後";
+"until" = "";
+
+"YearKey" = " 年";
+
+"WeekKey" = " 週";
+
+"DayKey" = " 天";
+
+"HourKey" = " 小時";
+
+"MinuteKey" = " 分";
+
+"SecondKey" = " 秒";
+
