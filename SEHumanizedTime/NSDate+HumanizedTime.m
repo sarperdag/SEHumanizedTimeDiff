@@ -8,8 +8,8 @@
 
 #import "NSDate+HumanizedTime.h"
 
-#define LOCALISABLE_FULL @"Localizable_full"
-#define LOCALISABLE_SHORT @"Localizable"
+#define LOCALISABLE_FULL @"SEHumanizedTime_full"
+#define LOCALISABLE_SHORT @"SEHumanizedTime"
 
 @implementation NSDate (HumanizedTime)
 
