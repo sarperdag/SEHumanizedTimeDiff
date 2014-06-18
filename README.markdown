@@ -44,9 +44,7 @@ NSDateHumanizedSuffixAgo
 NSDateHumanizedSuffixNone | withFullString:NO
 ---------------------
 
-<p align="center">
-  <img src="https://raw.github.com/kwent/SEHumanizedTimeDiff/master/Screenshots/1.png" alt="NSDateHumanizedSuffixNone | withFullString:NO"/>
-</p>
+![NSDateHumanizedSuffixNone | withFullString:NO](Screenshots/1.png?raw=true)
 
 ``` plain
 Year     : 2010-09-14 | if > 1 year
@@ -62,9 +60,7 @@ Secondes : 3s
 NSDateHumanizedSuffixNone | withFullString:YES
 ---------------------
 
-<p align="center">
-  <img src="https://raw.github.com/kwent/SEHumanizedTimeDiff/master/Screenshots/2.png" alt="NSDateHumanizedSuffixNone | withFullString:YES"/>
-</p>
+![NSDateHumanizedSuffixNone | withFullString:YES](Screenshots/2.png?raw=true)
 
 ``` plain
 Year     : 2010-09-14   | if > 1 year
@@ -79,9 +75,7 @@ Secondes : 3 seconde(s) | With dynamic pluralize
 NSDateHumanizedSuffixLeft | withFullString:NO
 ---------------------
 
-<p align="center">
-  <img src="https://raw.github.com/kwent/SEHumanizedTimeDiff/master/Screenshots/3.png" alt="NSDateHumanizedSuffixLeft | withFullString:NO"/>
-</p>
+![NSDateHumanizedSuffixLeft | withFullString:NO](Screenshots/3.png?raw=true)
 
 ``` plain
 Year     : Until the 2010-09-14 | if > 1 year
@@ -97,9 +91,7 @@ Secondes : 3s left
 NSDateHumanizedSuffixLeft | withFullString:YES
 ---------------------
 
-<p align="center">
-  <img src="https://raw.github.com/kwent/SEHumanizedTimeDiff/master/Screenshots/4.png" alt="NSDateHumanizedSuffixLeft | withFullString:YES"/>
-</p>
+![NSDateHumanizedSuffixLeft | withFullString:YES](Screenshots/4.png?raw=true)
 
 ``` plain
 Year     : Until the 2010-09-14 | if > 1 year
@@ -114,9 +106,7 @@ Secondes : 3 seconde(s) left    | With dynamic pluralize
 NSDateHumanizedSuffixAgo | withFullString:NO
 ---------------------
 
-<p align="center">
-  <img src="https://raw.github.com/kwent/SEHumanizedTimeDiff/master/Screenshots/5.png" alt="NSDateHumanizedSuffixAgo | withFullString:NO"/>
-</p>
+![NSDateHumanizedSuffixAgo | withFullString:NO](Screenshots/5.png?raw=true)
 
 ``` plain
 Year     : 2010-09-14 | if > 1 year
@@ -131,9 +121,7 @@ Secondes : 3s ago
 NSDateHumanizedSuffixAgo | withFullString:YES
 ---------------------
 
-<p align="center">
-  <img src="https://raw.github.com/kwent/SEHumanizedTimeDiff/master/Screenshots/6.png" alt="NSDateHumanizedSuffixAgo | withFullString:YES"/>
-</p>
+![NSDateHumanizedSuffixAgo | withFullString:YES](Screenshots/6.png?raw=true)
 
 ``` plain
 Year     : 2010-09-14       | if > 1 year
