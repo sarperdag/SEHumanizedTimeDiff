@@ -53,7 +53,7 @@ Weeks    : 3w
 Days     : 2d
 Hours    : 4h
 Minutes  : 9m
-Secondes : 3s
+Seconds : 3s
 ```
 
 
@@ -69,7 +69,7 @@ Weeks    : 3 week(s)    | With dynamic pluralize
 Days     : 2 day(s)     | With dynamic pluralize
 Hours    : 4 hour(s)    | With dynamic pluralize
 Minutes  : 9 minute(s)  | With dynamic pluralize
-Secondes : 3 seconde(s) | With dynamic pluralize
+Seconds : 3 second(s) | With dynamic pluralize
 ```
 
 NSDateHumanizedSuffixLeft | withFullString:NO
@@ -84,7 +84,7 @@ Weeks    : 3w left
 Days     : 2d left
 Hours    : 4h left
 Minutes  : 9m left
-Secondes : 3s left
+Seconds : 3s left
 ```
 
 
@@ -100,7 +100,7 @@ Weeks    : 3 week(s) left       | With dynamic pluralize
 Days     : 2 day(s) left        | With dynamic pluralize
 Hours    : 4 hour(s) left       | With dynamic pluralize
 Minutes  : 9 minute(s) left     | With dynamic pluralize
-Secondes : 3 seconde(s) left    | With dynamic pluralize
+Seconds : 3 second(s) left    | With dynamic pluralize
 ```
 
 NSDateHumanizedSuffixAgo | withFullString:NO
@@ -115,7 +115,7 @@ Weeks    : 3w ago
 Days     : 2d ago
 Hours    : 4h ago
 Minutes  : 9m ago
-Secondes : 3s ago
+Seconds : 3s ago
 ```
 
 NSDateHumanizedSuffixAgo | withFullString:YES
@@ -130,7 +130,7 @@ Weeks    : 3 week(s) ago    | With dynamic pluralize
 Days     : 2 day(s) ago     | With dynamic pluralize
 Hours    : 4 hour(s) ago    | With dynamic pluralize
 Minutes  : 9 minute(s) ago  | With dynamic pluralize
-Secondes : 3 seconde(s) ago | With dynamic pluralize
+Seconds : 3 second(s) ago | With dynamic pluralize
 ```
 
 To do
