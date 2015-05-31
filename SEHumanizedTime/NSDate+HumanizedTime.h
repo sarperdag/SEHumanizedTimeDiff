@@ -20,3 +20,5 @@ typedef NS_ENUM(NSInteger, NSDateHumanizedType)
 - (NSString *) stringWithHumanizedTimeDifference:(NSDateHumanizedType) humanizedType withFullString:(BOOL) fullStrings;
 
 @end
+
+// end
